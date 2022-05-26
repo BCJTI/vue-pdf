@@ -7,7 +7,7 @@
 		var pdfjsWrapper = require('./pdfjsWrapper.js').default;
 		// var PDFJS = require('pdfjs-dist/es5/build/pdf.js');
 		var PDFJS = require('pdfjs-dist/es5/build/pdf.js');
-		PDFJS.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+		PDFJS.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS.version}/pdf.worker.js`;
 		var component = componentFactory(pdfjsWrapper(PDFJS));
 	} else {
 		var component = componentFactory({});
